@@ -31,6 +31,7 @@ class fact
             return factorial(a-1);
         }
     }
+
     ~fact(){}
 };
 
