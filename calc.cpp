@@ -13,6 +13,15 @@ class add
 
 };
 
+class mul
+{
+	public:
+		void prod(int a,int b)
+		{
+		cout<<"The product is: "<<a*b;
+		}
+};
+
 int main()
 {
 int s,a,b;
@@ -26,6 +35,12 @@ case 1:	{
 	cin>>a>>b;
 	ob.sum(a,b);
         }
+case 3: {
+	mul ob;
+	cout<<"\n Enter two numbers: ";
+	cin>>a>>b;
+	ob.prod(a,b);
+	}
 }
 return 0;
 }
