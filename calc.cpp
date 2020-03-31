@@ -31,6 +31,15 @@ class mul
 		}
 };
 
+class division
+{
+	public:
+		void div(int a,int b)
+		{
+		cout<<"the quotient is: "<<a/b;
+		}
+};
+
 int main()
 {
 int s,a,b;
@@ -45,6 +54,14 @@ case 1:	{
 	cin>>a>>b;
 	ob.sum(a,b);
         }
+
+case 4: {
+	division ob;
+	cout<<"Enter two numbers : ";
+	cin>>a>>b;
+	ob.div(a,b);
+	}
+
 
 
 case 2: {
@@ -61,6 +78,7 @@ case 3: {
 	cin>>a>>b;
 	ob.prod(a,b);
 	}
+
 
 }
 return 0;
