@@ -1,6 +1,7 @@
 // to design a four func calculator.
 
 #include<iostream>
+
 using namespace std;
 
 class add
@@ -48,36 +49,36 @@ cin>>s;
 switch(s)
 {
 
-case 1:	{
-	add ob;
-	cout <<"\n Enter two numbers:";
-	cin>>a>>b;
-	ob.sum(a,b);
-        }
+	case 1:	{
+		add ob;
+		cout <<"\n Enter two numbers:";
+		cin>>a>>b;
+		ob.sum(a,b);
+	        }
 
-case 4: {
-	division ob;
-	cout<<"Enter two numbers : ";
-	cin>>a>>b;
-	ob.div(a,b);
-	}
-
-
-
-case 2: {
-	sub ob;
-	cout<<"\n Enter two numbers: ";
-	cin>>a>>b;
-	ob.diff(a,b);
-	}
+	case 4: {
+		division ob;
+		cout<<"Enter two numbers : ";
+		cin>>a>>b;
+		ob.div(a,b);
+		}
 
 
-case 3: {
-	mul ob;
-	cout<<"\n Enter two numbers: ";
-	cin>>a>>b;
-	ob.prod(a,b);
-	}
+
+	case 2: {
+		sub ob;
+		cout<<"\n Enter two numbers: ";
+		cin>>a>>b;
+		ob.diff(a,b);
+		}
+
+
+	case 3: {
+		mul ob;
+		cout<<"\n Enter two numbers: ";
+		cin>>a>>b;
+		ob.prod(a,b);
+		}
 
 
 }
