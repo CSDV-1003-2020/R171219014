@@ -40,11 +40,18 @@ int count = 0;
             scanf("%d", &no);
             push(no);
             break;
+
+        
         case 3:
             empty();
             break;
        
-      default :
+        case 4:
+            display();
+            break;
+        
+       
+        default :
             printf(" Wrong choice, Please enter correct choice  ");
             break;
         }
@@ -90,26 +97,12 @@ void display()
         top1 = top1->ptr;
     }
  }
- /* Pop Operation on stack */
-void pop()
-{
-    top1 = top;
- 
-    if (top1 == NULL)
-    {
-        printf("\n Error : Trying to pop from empty stack");
-        return;
-    }
-    else
-        top1 = top1->ptr;
-    printf("\n Popped value : %d", top->info);
-    free(top);
-    top = top1;
-    count--;
-}
  
 
- /* Check if stack is empty or not */
+ 
+
+ 
+/* Check if stack is empty or not */
 void empty()
 {
     if (top == NULL)
@@ -117,4 +110,5 @@ void empty()
     else
         printf("\n Stack is not empty with %d elements", count);
 } 
+ 
 
