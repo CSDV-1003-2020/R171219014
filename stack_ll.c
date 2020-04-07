@@ -47,9 +47,9 @@ int count = 0;
         case 3:
             empty();
             break;
-       
-       
-        
+       case 4:
+            display();
+           break;
        
         default :
             printf(" Wrong choice, Please enter correct choice  ");
@@ -100,7 +100,23 @@ void pop()
     count--;
 }
  
-
+/* Display stack elements */
+void display()
+{
+    top1 = top;
+ 
+    if (top1 == NULL)
+    {
+        printf("Stack is empty");
+        return;
+    }
+ 
+    while (top1 != NULL)
+    {
+        printf("%d ", top1->info);
+        top1 = top1->ptr;
+    }
+ }
  
 /* Check if stack is empty or not */
 void empty()
