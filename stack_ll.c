@@ -40,20 +40,11 @@ int count = 0;
             scanf("%d", &no);
             push(no);
             break;
-        case 2:
-            pop();
-            break;
-        
         case 3:
             empty();
             break;
        
-        case 4:
-            display();
-            break;
-        
-       
-        default :
+      default :
             printf(" Wrong choice, Please enter correct choice  ");
             break;
         }
@@ -99,8 +90,7 @@ void display()
         top1 = top1->ptr;
     }
  }
- 
-/* Pop Operation on stack */
+ /* Pop Operation on stack */
 void pop()
 {
     top1 = top;
@@ -119,8 +109,7 @@ void pop()
 }
  
 
- 
-/* Check if stack is empty or not */
+ /* Check if stack is empty or not */
 void empty()
 {
     if (top == NULL)
