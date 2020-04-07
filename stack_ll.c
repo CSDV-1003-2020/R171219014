@@ -127,6 +127,5 @@ void empty()
         printf("\n Stack is empty");
     else
         printf("\n Stack is not empty with %d elements", count);
-}
- 
+} 
 
