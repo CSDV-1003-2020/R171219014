@@ -17,7 +17,7 @@
 }  
 
 
-delete()
+void delete()
 {
 int ele;
   if(top==-1)
@@ -32,7 +32,7 @@ int ele;
 
 }  
 
-insert()
+void insert()
 {
 	  if(top==5)
 		    printf("STACK IS FULL ");
