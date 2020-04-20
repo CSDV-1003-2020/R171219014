@@ -18,3 +18,20 @@ main()
   }
 }  
 
+
+delete()
+{
+int ele;
+  if(top==-1)
+  printf("STACK IS ALREADY EMPTY");
+  else
+  {
+    ele=stack[top];
+	top=top-1;
+	printf("THE TOP VALUE OF THE STACK IS DELETED ");
+  
+  }
+
+}  
+
+
