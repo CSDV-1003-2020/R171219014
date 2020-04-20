@@ -1,7 +1,4 @@
 #include<stdio.h>
-int stack[6],top=-1,item=0;
-main()
-{
   int a; 
   while(1)
   {  
@@ -19,6 +16,21 @@ main()
   }
 }  
 
+insert()
+{
+	  if(top==5)
+		    printf("STACK IS FULL ");
+	    else
+		      {
+			          printf("enter the the value to be inserted :");
+				      scanf("%d",&item);
+				          top=top+1;
+					  	stack[top]=item;
+							printf("the entered value : %d has been inserted succesfully",item);
+							  }
+	      
+
+}
 
 
 void display()
@@ -33,4 +45,5 @@ void display()
         }
     }
 }
+
 
